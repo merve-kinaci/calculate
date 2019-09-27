@@ -32,4 +32,4 @@ function formulaParser(){
             console.log(formulaArray.splice(i-1,i+2));}
         }
 }
-//Array(3) [ "2", "*", "2" ], Array(3) [ "8", "/", "4" ] sonuclari goruntuleniyor
+//x=2,y=2,z=8,t=4 ve formule x*y+z/4 yazdigimda Array(3) [ "2", "*", "2" ], Array(3) [ "8", "/", "4" ] sonuclari goruntuleniyor
