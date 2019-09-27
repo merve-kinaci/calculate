@@ -13,4 +13,23 @@ function getValue(){
 }
 function formulaParser(){
     formulaArray = formul.split('');
+    var x1 = parseInt(formulaArray[0]=x);
+    var y1 = parseInt(formulaArray[2]=y);
+    var z1 = parseInt(formulaArray[4]=z);
+    var t1 = parseInt(formulaArray[6]=t);
+    for(i=0; i<7; i++){
+        if(formulaArray[i]=="*"){
+            a = parseInt(formulaArray[i-1])*parseInt(formulaArray[i+1]);
+            console.log(formulaArray.splice(i-1,i+2));}
+        else if(formulaArray[i]=="/"){
+            b = parseInt(formulaArray[i-1])/parseInt(formulaArray[i+1]);
+            console.log(formulaArray.splice(i-1,i+2));}
+        else if(formulaArray[i]=="+"){
+            c = parseInt(formulaArray[i-1])+parseInt(formulaArray[i+1]);
+            console.log(formulaArray.splice(i-1,i+2));}
+        else if(formulaArray[i]=="-"){
+            d = parseInt(formulaArray[i-1])-parseInt(formulaArray[i+1]);
+            console.log(formulaArray.splice(i-1,i+2));}
+        }
 }
+//Array(3) [ "2", "*", "2" ], Array(3) [ "8", "/", "4" ] sonuclari goruntuleniyor
