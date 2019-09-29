@@ -3,18 +3,18 @@
 <head>
 	<meta charset = "UTF-8">
 	<link rel ="stylesheet"
-	href = "xyzt.css" />
+	href = "index.css" />
 </head>
 <body>
-	X <input type="number" id="x" name="x" >
-	Y <input type="number" id="y" name="y" >
-	Z <input type="number" id="z" name="z" >
-	T <input type="number" id="t" name="t" ><br>
-	Formul
-	<input type="text" name="getInputsValues" id="formul" placeholder="formul yaziniz"><br>
-	<input type="button" value="Hesapla" onClick="handleClick()"><br>
-	<p>Sonuç: <b id="sonuc"></b></p>
-<script src="xyzt.js">
+	X <input type="number" id="x" name="x" class="deger">
+	Y <input type="number" id="y" name="y" class="deger">
+	Z <input type="number" id="z" name="z" class="deger">
+	T <input type="number" id="t" name="t" class="deger"><br><br>
+	Formula<br>
+	<input type="text" name="getInputsValues" id="formul" placeholder="formul yaziniz" class="formul"><br><br>
+	<input type="button" value="Calculate" onClick="handleClick()" class="button"><br>
+	<p>Result<br> <b id="sonuc" class="sonuc"></b></p>
+<script src="index.js">
 </script>
 </body>
 </html>
