@@ -4,7 +4,7 @@ function handleClick(){
     getInputsValues();
     formulaParser();
     calculater();
-    document.getElementById("sonuc").innerHTML=formulaArray;
+    document.getElementById("result").value = formulaArray[0];
 }
 
 function getInputsValues(){
@@ -49,4 +49,5 @@ function calculater(){
     } else {
         return;
     }
+    
 }
