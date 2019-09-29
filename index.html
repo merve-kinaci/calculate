@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset = "UTF-8">
@@ -6,14 +6,35 @@
 	href = "index.css" />
 </head>
 <body>
-	X <input type="number" id="x" name="x" class="deger">
-	Y <input type="number" id="y" name="y" class="deger">
-	Z <input type="number" id="z" name="z" class="deger">
-	T <input type="number" id="t" name="t" class="deger"><br><br>
-	Formula<br>
-	<input type="text" name="getInputsValues" id="formul" placeholder="formul yaziniz" class="formul"><br><br>
-	<input type="button" value="Calculate" onClick="handleClick()" class="button"><br>
-	<p>Result<br> <b id="sonuc" class="sonuc"></b></p>
+	<div class="container">
+		<div class="column">
+			<span>X</span>
+			<input type="number" id="x" name="x">
+		</div>
+		<div class="column">
+			<span>Y</span>
+			<input type="number" id="y" name="y">
+		</div>
+		<div class="column">
+			<span>Z</span>
+			<input type="number" id="z" name="z">
+		</div>
+		<div class="column">
+			<span>T</span>
+			<input type="number" id="t" name="t">
+		</div>
+
+		<div class="row">
+			<span>Formula</span>
+			<input type="text" name="formul" id="formul" placeholder="Denklem yazınız..." class="formul">
+			<input type="button" value="Calculate" onClick="handleClick()" class="button">
+		</div>
+
+		<div class="row">
+			<span>Result</span>
+			<input type="text" name="result" id="result" placeholder="" class="result" readonly>
+		</div>
+	</div>
 <script src="index.js">
 </script>
 </body>
